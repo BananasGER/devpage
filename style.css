@@ -42,11 +42,12 @@ body {
 nav {
     position: fixed;
     top: 0;
-    width: 100%;  /* Navbar immer 100% der Breite */
     background-color: #1e1e1e;
     padding: 10px 0;
     z-index: 1000;
     box-sizing: border-box;  /* Stellt sicher, dass Padding die Breite nicht beeinflusst */
+    width: 100%; /* Stellt sicher, dass die Navbar die volle Breite des Viewports einnimmt */
+
 }
 nav ul {
     list-style: none;
@@ -423,13 +424,18 @@ iframe {
 .notification.show {
     display: block; /* Benachrichtigung anzeigen */
 }
-
-/* Für sehr kleine Bildschirme anpassen */
+/* Reaktionsfähige Anpassung der Navbar für kleinere Bildschirme */
 @media (max-width: 768px) {
-    .notification {
-        top: 10px; /* Position der Benachrichtigung bei kleineren Bildschirmen etwas nach oben verschieben */
-        right: 10px; /* Rechtsbündig, aber etwas weiter von der Ecke entfernt */
-        width: 90%; /* Breite der Benachrichtigung anpassen */
-        max-width: none; /* Keine Begrenzung der maximalen Breite */
+    nav ul {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Etwas weniger Abstand zwischen den Links */
+    }
+
+    nav {
+        width: 100%; /* Die Navbar nimmt immer noch die volle Breite ein */
     }
 }
