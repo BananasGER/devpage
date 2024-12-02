@@ -423,3 +423,13 @@ iframe {
 .notification.show {
     display: block; /* Benachrichtigung anzeigen */
 }
+
+/* Für sehr kleine Bildschirme anpassen */
+@media (max-width: 768px) {
+    .notification {
+        top: 10px; /* Position der Benachrichtigung bei kleineren Bildschirmen etwas nach oben verschieben */
+        right: 10px; /* Rechtsbündig, aber etwas weiter von der Ecke entfernt */
+        width: 90%; /* Breite der Benachrichtigung anpassen */
+        max-width: none; /* Keine Begrenzung der maximalen Breite */
+    }
+}
