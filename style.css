@@ -1,0 +1,400 @@
+/* Standard Lightmode (Helles Design) */
+body.light-mode {
+    background-color: #ffffff; /* Heller Hintergrund */
+    color: #121212; /* Dunkle Schrift */
+}
+
+.light-mode header, 
+.light-mode nav, 
+.light-mode .table-container, 
+.light-mode .requirements-container,
+.light-mode footer {
+    background-color: #f5f5f5; /* Hellerer Hintergrund für diese Bereiche */
+    color: #333; /* Dunklere Schrift für diese Bereiche */
+}
+
+.light-mode a {
+    color: #0066cc; /* Blau für Links im Lightmode */
+}
+
+.light-mode th {
+    background-color: #0066cc; /* Blau für Tabellenkopf im Lightmode */
+}
+
+.light-mode td {
+    background-color: #f0f0f0; /* Hellgrau für Tabellenzellen */
+    color: #333; /* Dunkle Schrift */
+}
+
+/* Globales Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dunkler Hintergrund */
+    color: #ffffff; /* Helle Schriftfarbe */
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1e1e1e; /* Dunkleres Grau für die Navigationsleiste */
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Erlaubt, dass die Menüelemente umbrechen */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Weiße Links */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Grauer Hover-Effekt */
+    border-radius: 5px;
+}
+
+/* Startseite und allgemeiner Seiteninhalt */
+.page {
+    display: none;
+    padding-top: 80px; /* Platz für die feste Navbar */
+}
+
+#home {
+    display: block; /* Die Startseite wird standardmäßig angezeigt */
+}
+
+header {
+    padding: 20px;
+    background-color: #333333; /* Dunkler Header */
+    color: #ffffff; /* Helle Schrift im Header */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.table-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #444444;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+td:nth-child(2) {
+    font-size: 1.5em;
+}
+
+td:nth-child(3) {
+    font-size: 1.2em;
+}
+
+tr:hover {
+    background-color: #333333;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.social-icon {
+    font-size: 30px;
+    color: #000;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #ff9900;
+}
+
+.social-icon i {
+    pointer-events: none;
+}
+
+/* Über mich Section */
+.bananalogo {
+    float: left;
+    margin-right: 30px;
+    margin-left: 40px;
+    width: 150px;
+    height: auto;
+    border: 5px solid #999999;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.overview {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.aboutMeDesc {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-right: 250px;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.geschichteText {
+    margin-left: 50px;
+    margin-right: 90px;
+}
+
+/* Team Mitglieder */
+.team-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.team-logo {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+h2, h3, h4 {
+    font-family: Arial, sans-serif;
+}
+
+.admin-container, .secretary-container, .moderator-container, .test-moderator-container {
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #444;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+img[src*="path-to-"]:not([src]) {
+    content: url('placeholder-image.jpg');
+}
+
+/* Bewerbungsseite */
+.requirements-container {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+}
+
+.requirements-container h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.requirements-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    text-align: left;
+    color: #ddd;
+}
+
+.requirements-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+}
+
+.apply-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #45a049;
+}
+
+.apply-btn:active {
+    transform: scale(0.98);
+}
+
+/* Contact Page */
+.discord-name {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.discord-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background-color: #5865F2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.discord-btn:hover {
+    background-color: #4854c9;
+}
+
+iframe {
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Light/Darkmode Button */
+.mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+#modeButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#modeButton:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Anpassungen */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table-container {
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .team-member {
+        margin: 10px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .bananalogo {
+        width: 120px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .aboutMeDesc {
+        font-size: 1.1em;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .requirements-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .discord-btn {
+        padding: 10px 25px;
+    }
+
+    #modeButton {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        padding: 8px 15px;
+    }
+}
